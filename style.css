@@ -33,3 +33,13 @@
 
 /* V2.2 Stage 2.2 */
 .history-actions{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0 18px}.history-row{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding:18px 0;border-bottom:1px solid #eee7f1}.history-row strong{display:block}.history-row small{display:block;margin-top:6px;color:#80718a}.history-money{white-space:nowrap;font-variant-numeric:tabular-nums}#taxDetails .item{margin-bottom:12px}#cardList{margin-bottom:20px}#cardTransactionList .item{margin-bottom:8px}@media(max-width:580px){.history-row{gap:8px}.history-money{font-size:14px}}
+
+/* HIST-01 / INST-02 / CARD-03: one horizontal row per record on mobile */
+.hscroll{width:100%;overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
+.data-row{display:flex;align-items:center;gap:12px;min-width:max-content;padding:11px 8px;border-bottom:1px solid #e9e2ed;white-space:nowrap}
+.data-row>*{flex:0 0 auto}.data-row strong{min-width:125px}.data-row small{font-size:13px;color:#6d6174}
+.data-row button{width:auto;margin:0}.data-row form{display:flex;gap:8px;align-items:center;flex-wrap:nowrap;margin:0}.data-row form input{min-width:110px;max-width:170px}.data-row form label{min-width:120px;font-size:12px}
+.data-row .inline-form{padding:0;background:transparent;border:0}.data-row .inline-form input{width:120px}
+.hscroll .plan-row{width:auto;min-width:max-content;white-space:nowrap;text-align:left}.hscroll .plan-row-head,.hscroll .plan-row-values{flex-wrap:nowrap;gap:18px}
+#cardReminders .data-row{min-width:max-content}.data-row .chip{margin:0}
+@media(max-width:650px){.data-row{flex-wrap:nowrap}.upcoming-row{min-width:max-content;flex-wrap:nowrap}.upcoming-right{flex-wrap:nowrap;max-width:none}}
