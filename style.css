@@ -30,3 +30,6 @@
 #planDetailView{margin-top:16px}
 .plan-summary{line-height:1.7;margin-bottom:0}
 @media(max-width:580px){.plan-toolbar{grid-template-columns:1fr;gap:0}.plan-row-values{flex-wrap:wrap}}
+
+/* V2.2 Stage 2.2 */
+.history-actions{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0 18px}.history-row{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding:18px 0;border-bottom:1px solid #eee7f1}.history-row strong{display:block}.history-row small{display:block;margin-top:6px;color:#80718a}.history-money{white-space:nowrap;font-variant-numeric:tabular-nums}#taxDetails .item{margin-bottom:12px}#cardList{margin-bottom:20px}#cardTransactionList .item{margin-bottom:8px}@media(max-width:580px){.history-row{gap:8px}.history-money{font-size:14px}}
