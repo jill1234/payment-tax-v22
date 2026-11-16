@@ -12,3 +12,21 @@
 .upcoming-status{margin:0!important;text-align:center;white-space:nowrap}
 .upcoming-status.overdue{color:#a33838!important;background:#fbe8e8!important}
 @media(max-width:650px){.upcoming-row{align-items:flex-start;gap:8px}.upcoming-name{flex:1}.upcoming-right{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:5px 10px;max-width:62%;font-size:13px}}
+
+/* Stage 2.1: compact plan list and standalone detail view */
+[hidden]{display:none!important}
+.plan-toolbar{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:14px}
+.plan-toolbar label{font-weight:600;font-size:14px}
+#planList.stack{margin-bottom:8px}
+.plan-row{display:block;text-align:left;width:100%;white-space:normal;padding:16px;border-radius:12px}
+.plan-row:focus-visible{outline:3px solid #82699a;outline-offset:2px}
+.plan-row-head,.plan-row-values{display:flex;justify-content:space-between;gap:12px;align-items:center}
+.plan-row-head strong{font-size:16px;overflow-wrap:anywhere}
+.plan-row-values{margin-top:12px;font-size:13px;color:#75677e;font-variant-numeric:tabular-nums}
+.plan-badge{font-size:12px;background:#f0eaf5;border-radius:12px;padding:4px 10px;white-space:nowrap}
+.plan-badge.overdue{color:#9b3030;background:#fbe9e9}
+.pagination{display:flex;justify-content:center;gap:10px;margin-top:16px}
+.pagination button:disabled{opacity:.45;cursor:default}
+#planDetailView{margin-top:16px}
+.plan-summary{line-height:1.7;margin-bottom:0}
+@media(max-width:580px){.plan-toolbar{grid-template-columns:1fr;gap:0}.plan-row-values{flex-wrap:wrap}}
